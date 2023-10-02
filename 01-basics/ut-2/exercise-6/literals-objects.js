@@ -142,7 +142,7 @@ export const getBirthdayOfDirector = () => {
  */
 export const getLastPrincipalOfDirector = () => {
   let lastFilm = movie.director.notableFilmography
-  return lastFilm[length-1];
+  return lastFilm[lastFilm.length-1];
 };
 
 /**
@@ -159,8 +159,8 @@ export const getDescriptionOfGandalf = () => {
  * @returns the numbers of characters
  */
 export const getNumbersOfCharacters = () => {
-  let n = movie.director.notableFilmography.length;
-  return Object.values(movie.director.notableFilmograph[n-1]).indexOf;
+  let n = movie.director.notableFilmography;
+  return n.length;
 };
 
 /**
