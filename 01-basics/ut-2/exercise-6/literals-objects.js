@@ -52,7 +52,7 @@ return person.address.number;
  * Removes the address number of person object
  */
 export const removeNumbreAddressProperty = () => {
-  return delete(person.address.number);
+   delete(person.address.number);
 };
 
 /**
@@ -141,10 +141,8 @@ export const getBirthdayOfDirector = () => {
  * @returns the last principal films of director
  */
 export const getLastPrincipalOfDirector = () => {
-  
-  const values = Object.values(movie.notableFilmography);
-  const index = values.indexOf("Fantasía");
-  return index;
+  let lastFilm = movie.director.notableFilmography
+  return lastFilm[length-1];
 };
 
 /**
@@ -161,7 +159,8 @@ export const getDescriptionOfGandalf = () => {
  * @returns the numbers of characters
  */
 export const getNumbersOfCharacters = () => {
-  return movie.characters.lastIndexOf();
+  let n = movie.director.notableFilmography.length;
+  return Object.values(movie.director.notableFilmograph[n-1]).indexOf;
 };
 
 /**
@@ -186,5 +185,5 @@ export const getMovieKeys = () => {
  * @returns the infex of Fantasia value
  */
 export const getIndexOfFantasaiValue = () => {
-  return (Object.values(movie)).indexOf("Fantasía");
+  return Object.values(movie).indexOf("Fantasía");
 };
