@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0;
+}
+
+li{
+
+  border-radius: 3px;
+  background-color: rgb(180, 173, 173);
+  margin-bottom: 3px;
+  list-style: none;
+  padding: 10px 20px;
+ 
+}
