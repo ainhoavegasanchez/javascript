@@ -4,7 +4,7 @@ import { Product } from "./classes/Product.js";
 
 let precio = new Price("USD", "399.00");
 
-let reviews = new Review(4.6, 73);
+let reviews = new Review("4.6", "73");
 
 let producto = new Product(
   "New Apple iPhone SE (64GB, (Product) RED) [Locked] + Cricket Wireless Plan",
@@ -15,14 +15,11 @@ let producto = new Product(
   reviews
 );
 
-let clavesProducto = Object.keys(producto);
-let valorProducto = Object.values(reviews);
 
 
 let lista = document.createElement("ul");
 let div = document.createElement("div");
 div.className = "container";
-
 
 Object.entries(producto).forEach(([clave, valor]) => {
   let li = document.createElement("li");
@@ -41,9 +38,7 @@ Object.entries(producto).forEach(([clave, valor]) => {
     li.textContent = clave + "= " + valor; 
     lista.append(li);
   }
-
- 
 });
 
-div.appendChild(lista);
-document.body.appendChild(div);
+div.append(lista);
+document.body.append(div);

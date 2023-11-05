@@ -1,17 +1,12 @@
 .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  margin: 0;
+  width: 80%;
+  margin: auto;
 }
 
 li{
-
   border-radius: 3px;
-  background-color: rgb(180, 173, 173);
+  background-color: gray;
   margin-bottom: 3px;
   list-style: none;
-  padding: 10px 20px;
- 
+  padding: 5px;
 }
